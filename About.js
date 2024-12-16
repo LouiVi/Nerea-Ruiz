@@ -21,12 +21,12 @@ function About()
     layPub.SetPadding( 0.05, 0.05, 0.05, 0 );
     
     //Add an icon to top layout.
-    var img = app.CreateImage( "Img/Hello.png", 0.2 );
+    var img = app.CreateImage( "Img/1000059471-removebg.png", 0.46);
     img.SetPosition( drawerWidth*0.06, 0.04 );
     layPub.AddChild( img );
     
     //Create a text with formatting.
-    var text = "<p>This is my app " + 
+    var text = "<p>Nerea Ramírez " + 
         "<a href=http://www.google.com>My Link</a></p>";
     var txt = app.CreateText( text, 0.8, -1, "Html,Link" );
     txt.SetPadding( 0.03, 0.03, 0.03, 0 );
@@ -35,7 +35,7 @@ function About()
     layPub.AddChild( txt );
     
     //Create contact button.
-    var btnContact = app.CreateButton( "Contact Us", 0.3, 0.1 );
+    var btnContact = app.CreateButton( "Contact Us", 0.63, 0.1 );
     btnContact.SetMargins( 0,0,0,0.02 );
     btnContact.SetOnTouch( this.btnContact_OnTouch );
     layPub.AddChild( btnContact );
@@ -43,5 +43,4 @@ function About()
     //Add dialog layout and show dialog.
     dlgPub.AddLayout( layPub );
 }
-
 
